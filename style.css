@@ -88,4 +88,43 @@ body{
     width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+    /* Styles for smaller screens */
+    .container {
+        padding: 0px 20px;
+    }
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+    .home-left img {
+        height: auto;
+        width: 100%;
+    }
+}
 
+/* Mobile-first styles */
+.container {
+    padding: 0px 20px;
+}
+
+.home-container {
+    display: block; /* Change to block layout on small screens */
+}
+
+.home-left img {
+    height: auto;
+    width: 100%;
+}
+
+/* Tablet and larger screens */
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0px 40px;
+    }
+
+    .home-container {
+        display: grid;
+        grid-template-columns: 6fr auto;
+        gap: 2rem;
+    }
+}

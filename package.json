@@ -1,0 +1,13 @@
+{
+  "name": "balance-brackets",
+  "version": "1.0.0",
+  "description": "checking balanced brackets",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.test.js"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0"
+  }
+}
